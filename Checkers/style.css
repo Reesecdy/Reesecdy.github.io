@@ -1,0 +1,87 @@
+body {
+    background-color: #6567da;  /* Change this to the color you want for the background */
+}
+
+#checkers-board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.black {
+    background-color: #000;
+    position: relative;
+}
+
+.red {
+    background-color: #fa0909;
+    position: relative;
+}
+
+.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red-piece {
+    background-color: #fa0606;
+}
+
+.black-piece {
+    background-color: #585555;
+}
+
+#scoreboard {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
